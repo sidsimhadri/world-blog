@@ -117,7 +117,7 @@ function ResponsiveAppBar( ) {
 				</Box>
 				<Box sx={{ flexGrow: 2 }}>
 				<Grid container justifyContent={'center'} alignItems='center' width='50%'>
-				<Grid item xs={12} sm={6}>
+				<Grid item xs={6} sm={6}>
 				<LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_API_KEY} libraries={['places']}>
 				<Autocomplete
 				onLoad={(autocomplete) => (autocompleteRef.current = autocomplete)}
@@ -125,7 +125,7 @@ function ResponsiveAppBar( ) {
 				>
 				<TextField
 				sx={{ flexGrow: 1, display: 'flex' }}
-				style={{ borderTopLeftRadius: "50px", borderBottomLeftRadius: "50px",  backgroundColor: 'white' }}
+				style={{ borderTopLeftRadius: "50px", borderBottomLeftRadius: "50px", backgroundColor: 'white' }}
 				label="Search for a location"
 				variant="outlined"
 				onChange={(e) => setInputValue(e.target.value)}
@@ -134,7 +134,7 @@ function ResponsiveAppBar( ) {
 				</Autocomplete>
 				</LoadScript>
 				</Grid>
-				<Grid item xs={12} sm={3}>
+				<Grid item xs={3} sm={3}>
 				<FormControl sx={{ flexGrow: 1, display: 'flex' }} variant="outlined">
 				<InputLabel id="miles-label">Miles</InputLabel>
 				<Select 
@@ -153,7 +153,7 @@ function ResponsiveAppBar( ) {
 				</Select>
 				</FormControl>
 				</Grid>
-				<Grid item xs={12} sm={3}>
+				<Grid item xs={3} sm={3}>
 				<IconButton 
 				onClick={handleSearchSubmit} 
 				sx={{
@@ -173,10 +173,9 @@ function ResponsiveAppBar( ) {
 					padding: '5px' 
 				}}/>
 				</IconButton>
-				
-				
 				</Grid>
 				</Grid>
+				
 				<LoginButton />
 				</Box>
 				
