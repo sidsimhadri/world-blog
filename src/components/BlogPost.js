@@ -65,7 +65,7 @@ const postData = {
           fullWidth
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          required="true"
+          required={true}
         />
         <TextField
           margin="dense"
@@ -75,7 +75,7 @@ const postData = {
           multiline
           rows={4}
           value={content}
-          required="true"
+          
           onChange={(e) => setContent(e.target.value)}
         />
         <Box mt={2}>
