@@ -1,5 +1,5 @@
 import axios from 'axios';
-const POST_API = 'http://localhost:4000/api/posts';
+const POST_API = process.env.REACT_APP_POSTS_API_KEY
 
 
 export const createPost = async (post) => {
